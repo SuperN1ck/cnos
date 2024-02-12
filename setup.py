@@ -31,7 +31,7 @@ setuptools.setup(
     # license="MIT",
     # url="https://github.com/chisarie/jax-agents",
     # packages=["THOR"],
-    packages={"CNOS"}, #setuptools.find_packages(),
+    # packages={"CNOS"}, #setuptools.find_packages(),
     package_dir={"CNOS": "src"},
     # classifiers=[
     #     "Programming Language :: Python :: 3",
