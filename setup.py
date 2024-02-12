@@ -30,13 +30,22 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     # license="MIT",
     # url="https://github.com/chisarie/jax-agents",
-    # packages=["THOR"],
-    # packages={"CNOS"}, #setuptools.find_packages(),
-    package_dir={"CNOS": "src"},
+    # Creates the following structure
+    # CNOS/
+    #   ...
+    #    everything under stc/
+    #   ...
+    #   configs/
+    #       ...
+    #        everything under configs/
+    #       ...
+    package_dir={"CNOS": "src", "CNOS/configs": "configs"}, 
     # classifiers=[
     #     "Programming Language :: Python :: 3",
     #     "License :: OSI Approved :: MIT License",
     #     "Operating System :: OS Independent",
     # ],
+    # package_data={"CNOS/configs": ["configs"]}, # This should map configs into CNOS namespace?! --> Actually not needed
+    include_package_data=True, # includes everything in the specified folders above, e.g. .yamls, make sure there is a MANIFEST.in file
     python_requires=">=3.7",
 )
