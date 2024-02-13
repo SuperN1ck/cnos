@@ -16,13 +16,13 @@ import numpy as np
 from hydra.utils import instantiate
 import argparse
 import glob
-from src.utils.bbox_utils import CropResizePad
+from CNOS.utils.bbox_utils import CropResizePad
 from omegaconf import DictConfig, OmegaConf
 from torchvision.utils import save_image
 import torchvision.transforms as T
-from src.model.utils import Detections, convert_npz_to_json
-from src.model.loss import Similarity
-from src.utils.inout import save_json_bop23
+from CNOS.model.utils import Detections, convert_npz_to_json
+from CNOS.model.loss import Similarity
+from CNOS.utils.inout import save_json_bop23
 import cv2
 import distinctipy
 from skimage.feature import canny

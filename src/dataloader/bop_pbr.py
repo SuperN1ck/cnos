@@ -9,8 +9,8 @@ from PIL import Image
 from torch.utils.data import Dataset
 import os.path as osp
 import pandas as pd
-from src.utils.inout import load_json, save_json, casting_format_to_save_json
-from src.poses.utils import (
+from CNOS.utils.inout import load_json, save_json, casting_format_to_save_json
+from CNOS.poses.utils import (
     load_index_level_in_level2,
     get_obj_poses_from_template_level,
     NearestTemplateFinder,
@@ -18,11 +18,11 @@ from src.poses.utils import (
     combine_R_and_T,
 )
 import torch
-from src.utils.bbox_utils import CropResizePad
+from CNOS.utils.bbox_utils import CropResizePad
 import pytorch_lightning as pl
 from functools import partial
 import multiprocessing
-from src.dataloader.bop import BaseBOP
+from CNOS.dataloader.bop import BaseBOP
 
 
 class BOPTemplatePBR(BaseBOP):

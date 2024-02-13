@@ -4,13 +4,13 @@ import json
 import cv2
 import logging
 from torchvision.ops import masks_to_boxes
-from src.utils.inout import load_json
+from CNOS.utils.inout import load_json
 import os
 from segment_anything.utils.amg import rle_to_mask
 from omegaconf import DictConfig
 from PIL import Image
 from tqdm import tqdm
-from src.utils.visualization_detectron2 import CNOSVisualizer
+from CNOS.utils.visualization_detectron2 import CNOSVisualizer
 
 @hydra.main(version_base=None, config_path="../../configs", config_name="run_vis")
 def visualize(cfg: DictConfig) -> None:

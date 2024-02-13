@@ -11,7 +11,7 @@ import logging
 import distinctipy
 import torch
 from torchvision.ops import masks_to_boxes
-from src.utils.inout import load_json
+from CNOS.utils.inout import load_json
 import os
 from segment_anything.utils.amg import rle_to_mask
 from omegaconf import DictConfig

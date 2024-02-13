@@ -8,7 +8,7 @@ import multiprocessing
 import logging
 import os, sys
 import os.path as osp
-from src.poses.utils import get_obj_poses_from_template_level
+from CNOS.poses.utils import get_obj_poses_from_template_level
 
 # set level logging
 logging.basicConfig(level=logging.INFO)

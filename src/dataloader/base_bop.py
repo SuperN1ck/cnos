@@ -9,10 +9,10 @@ from PIL import Image
 from torch.utils.data import Dataset
 import os.path as osp
 import pandas as pd
-from src.utils.inout import load_json, save_json, casting_format_to_save_json
-from src.poses.utils import load_index_level_in_level2
+from CNOS.utils.inout import load_json, save_json, casting_format_to_save_json
+from CNOS.poses.utils import load_index_level_in_level2
 import torch
-from src.utils.bbox_utils import CropResizePad
+from CNOS.utils.bbox_utils import CropResizePad
 import pytorch_lightning as pl
 
 pl.seed_everything(2023)

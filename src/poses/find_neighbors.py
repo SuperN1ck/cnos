@@ -1,13 +1,13 @@
 import numpy as np
 # import open3d as o3d
 import os
-from src.poses.utils import (
+from CNOS.poses.utils import (
     get_obj_poses_from_template_level,
     get_root_project,
     NearestTemplateFinder,
 )
 import os.path as osp
-# from src.utils.vis_3d_utils import convert_numpy_to_open3d, draw_camera
+# from CNOS.utils.vis_3d_utils import convert_numpy_to_open3d, draw_camera
 
 if __name__ == "__main__":
     for template_level in range(2):

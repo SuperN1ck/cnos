@@ -5,9 +5,9 @@ from torchvision.utils import make_grid, save_image
 import pytorch_lightning as pl
 import logging
 import numpy as np
-from src.utils.bbox_utils import CropResizePad, CustomResizeLongestSide
+from CNOS.utils.bbox_utils import CropResizePad, CustomResizeLongestSide
 from torchvision.utils import make_grid, save_image
-from src.model.utils import BatchedData
+from CNOS.model.utils import BatchedData
 from copy import deepcopy
 
 descriptor_size = {

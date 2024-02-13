@@ -8,8 +8,8 @@ import os
 import os.path as osp
 from torchvision.utils import make_grid, save_image
 import pytorch_lightning as pl
-from src.utils.inout import save_json, load_json, save_json_bop23
-from src.model.utils import BatchedData, Detections, convert_npz_to_json
+from CNOS.utils.inout import save_json, load_json, save_json_bop23
+from CNOS.model.utils import BatchedData, Detections, convert_npz_to_json
 from hydra.utils import instantiate
 import time
 import glob

@@ -7,8 +7,8 @@ import numpy as np
 import os.path as osp
 from tqdm import tqdm
 import argparse
-from src.utils.trimesh_utils import as_mesh
-from src.utils.trimesh_utils import get_obj_diameter
+from CNOS.utils.trimesh_utils import as_mesh
+from CNOS.utils.trimesh_utils import get_obj_diameter
 os.environ["DISPLAY"] = ":1"
 os.environ["PYOPENGL_PLATFORM"] = "egl"
 

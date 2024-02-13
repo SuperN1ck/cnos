@@ -8,11 +8,11 @@ from pathlib import Path
 from PIL import Image
 from torch.utils.data import Dataset
 import os.path as osp
-from src.poses.utils import load_index_level_in_level2
+from CNOS.poses.utils import load_index_level_in_level2
 import torch
-from src.utils.bbox_utils import CropResizePad
+from CNOS.utils.bbox_utils import CropResizePad
 import pytorch_lightning as pl
-from src.dataloader.base_bop import BaseBOP
+from CNOS.dataloader.base_bop import BaseBOP
 
 pl.seed_everything(2023)
 

@@ -3,8 +3,8 @@ import numpy as np
 import torchvision
 from torchvision.ops.boxes import batched_nms, box_area
 import logging
-from src.utils.inout import save_json, load_json, save_npz
-from src.utils.bbox_utils import xyxy_to_xywh, xywh_to_xyxy, force_binary_mask
+from CNOS.utils.inout import save_json, load_json, save_npz
+from CNOS.utils.bbox_utils import xyxy_to_xywh, xywh_to_xyxy, force_binary_mask
 import time
 from PIL import Image
 

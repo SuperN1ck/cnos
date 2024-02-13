@@ -1,8 +1,8 @@
 from torch import nn
 import torch
-from src.poses.utils import load_rotation_transform, convert_openCV_to_openGL_torch
+from CNOS.poses.utils import load_rotation_transform, convert_openCV_to_openGL_torch
 import torch.nn.functional as F
-from src.model.utils import BatchedData
+from CNOS.model.utils import BatchedData
 
 
 class Similarity(nn.Module):
