@@ -55,7 +55,7 @@ def run_inference(cfg: DictConfig):
         ref_dataset = instantiate(ref_dataloader_config)
     elif cfg.model.onboarding_config.rendering_type == "pbr":
         logging.info("Using BlenderProc for reference images")
-        ref_dataloader_config._target_ = "src.dataloader.bop_pbr.BOPTemplatePBR"
+        ref_dataloader_config._target_ = "CNOS.dataloader.bop_pbr.BOPTemplatePBR"
         ref_dataloader_config.root_dir = f"{query_dataloader_config.root_dir}"
         ref_dataloader_config.template_dir += f"templates_pyrender/{cfg.dataset_name}"
         ref_dataset = instantiate(ref_dataloader_config)

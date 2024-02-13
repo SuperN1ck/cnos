@@ -2,13 +2,13 @@ version: 1
 
 filters:
   onlyimportant:
-    (): src.utils.logging.LevelsFilter
+    (): CNOS.utils.logging.LevelsFilter
     levels:
     - CRITICAL
     - ERROR
     - WARNING
   noimportant:
-    (): src.utils.logging.LevelsFilter
+    (): CNOS.utils.logging.LevelsFilter
     levels:
     - INFO
     - DEBUG

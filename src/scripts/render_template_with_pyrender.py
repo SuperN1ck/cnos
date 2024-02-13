@@ -36,7 +36,7 @@ def call_pyrender(
         os.makedirs(output_dir)
 
     # command = f"blenderproc run ./src/poses/blenderproc.py {cad_path} {obj_pose_path} {output_dir} {gpus_devices}"
-    command = f"python -m src.poses.pyrender {cad_path} {obj_pose_path} {output_dir} {gpus_devices}"
+    command = f"python -m CNOS.poses.pyrender {cad_path} {obj_pose_path} {output_dir} {gpus_devices}"
     if disable_output:
         command += " true"
     else:

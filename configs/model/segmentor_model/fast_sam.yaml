@@ -1,4 +1,4 @@
-_target_: src.model.fast_sam.FastSAM
+_target_: CNOS.model.fast_sam.FastSAM
 checkpoint_path: ${machine.root_dir}/pretrained/FastSAM/FastSAM-x.pt
 segmentor_width_size: ${model.segmentor_width_size}
 config:

@@ -1,4 +1,4 @@
-  _target_: src.model.dinov2.CustomDINOv2
+  _target_: CNOS.model.dinov2.CustomDINOv2
   model_name: dinov2_vitl14
   model: 
     _target_: torch.hub.load

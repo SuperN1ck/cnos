@@ -1,4 +1,4 @@
-_target_: src.model.detector.CNOS
+_target_: CNOS.model.detector.CNOS
 log_interval: 5
 log_dir: ${save_dir}
 segmentor_width_size: 640 # make it stable
@@ -16,7 +16,7 @@ post_processing_config:
 
 matching_config: 
   metric:
-    _target_: src.model.loss.PairwiseSimilarity
+    _target_: CNOS.model.loss.PairwiseSimilarity
     metric: cosine
     chunk_size: 16
   aggregation_function: avg_5
